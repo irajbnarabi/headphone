@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-1{opacity:1}.cls-2,.cls-3{fill:none}.cls-3{stroke:#fff}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_278" data-name="Group 278" transform="translate(-102 -2)">
+        <g id="Group_16" class="cls-1" data-name="Group 16" transform="translate(-1207.335 -1156.539)">
+            <path id="Rectangle_8" d="M0 0H30V30H0z" class="cls-2" data-name="Rectangle 8" transform="translate(1309.335 1158.539)"/>
+        </g>
+        <g id="Group_237" class="cls-1" data-name="Group 237" transform="translate(1251 -518)">
+            <g id="Rectangle_526" class="cls-3" data-name="Rectangle 526">
+                <path d="M2 0h12a2 2 0 0 1 2 2H0a2 2 0 0 1 2-2z" class="cls-4" transform="translate(-1142 542)"/>
+                <path d="M1.25.5h13.5a.75.75 0 0 1 .75.75.25.25 0 0 1-.25.25H.75a.25.25 0 0 1-.25-.25.75.75 0 0 1 .75-.75z" class="cls-2" transform="translate(-1142 542)"/>
+            </g>
+            <g id="Rectangle_591" class="cls-3" data-name="Rectangle 591" transform="translate(-1146 526)">
+                <rect width="24" height="15" class="cls-4" rx="2"/>
+                <rect width="23" height="14" x=".5" y=".5" class="cls-2" rx="1.5"/>
+            </g>
+        </g>
+    </g>
+</svg>

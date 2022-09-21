@@ -1,0 +1,46 @@
+.search-default-container {
+	max-width: 1440px;
+	margin: auto;
+
+	& .search-default-tab {
+		height: 47px;
+		background: transparent !important;
+		border-bottom: 1px solid #4d4d4d;
+
+		& > div {
+			overflow: visible;
+
+			& > div {
+				overflow: visible !important;
+
+				& > div {
+					overflow: visible !important;
+				}
+			}
+		}
+
+		& button {
+			width: 50%;
+			max-width: 50%;
+			min-width: 50%;
+		}
+
+		& .MuiTabs-indicator {
+			background-color: transparent !important;
+			height: 1px !important;
+
+			&:after {
+				top: -50%;
+				left: 50%;
+				content: '';
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+				border: 10px solid rgba(77, 77, 77, 0);
+				border-top-color: #4d4d4d;
+				margin-left: -10px;
+			}
+		}
+	}
+}

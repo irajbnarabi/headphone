@@ -1,0 +1,89 @@
+@import 'src/assets/styles/mixins';
+
+.list-view-container {
+	padding   : 0 0 70px 0;
+	max-width : 1440px;
+	margin    : auto;
+
+	& .load-more {
+		background    : #0068d0;
+		color         : white;
+		border        : 0;
+		border-radius : 5px;
+		height        : 36px;
+		display       : block;
+		margin        : auto;
+		padding       : 0 1rem;
+
+		&:hover {
+			background : #0068d0;
+			color      : white;
+		}
+	}
+}
+
+.tag-info {
+	box-sizing : border-box;
+	display    : flex;
+	flex-wrap  : wrap;
+
+	& .tag-header {
+		align-items : center;
+		flex        : 1 1 50%;
+		position    : relative;
+
+		& .tag-info-box {
+			z-index : 1;
+
+			& .tag-image {
+				width         : 208px;
+				height        : 208px;
+				border-radius : 5px;
+				overflow      : hidden;
+				margin        : 1rem auto;
+				border        : .5px solid rgba(#707070, .5);
+				@include media-min-width(980px) {
+					width  : 600px;
+					height : 600px;
+				}
+			}
+
+			& h1 {
+				color      : white;
+				text-align : center;
+				font-size  : 30px;
+			}
+		}
+
+		& .tag-background-image {
+			position            : absolute;
+			left                : 0;
+			right               : 0;
+			top                 : 0;
+			bottom              : 55px;
+			z-index             : -1;
+			filter              : blur(40px);
+			background-size     : cover;
+			background-position : center;
+			@include media-min-width(980px) {
+				display : none;
+			}
+		}
+	}
+
+	& .tag-body {
+		margin-top : 1rem;
+		padding    : 24px;
+
+		& p {
+			color       : white;
+			font-size   : 12px;
+			line-height : 14px;
+
+			@include media-min-width(980px) {
+				font-size   : 16px;
+				line-height : 24px;
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"name": "web-v1",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.11.0",
+		"@material-ui/icons": "^4.9.1",
+		"@material-ui/lab": "^4.0.0-alpha.57",
+		"@material-ui/styles": "^4.10.0",
+		"@testing-library/jest-dom": "^5.11.5",
+		"@testing-library/react": "^11.1.2",
+		"@testing-library/user-event": "^12.2.2",
+		"@types/video.js": "^7.2.10",
+		"@videojs/http-streaming": "^1.13.3",
+		"axios": "^0.19.2",
+		"escape-string-regexp": "^4.0.0",
+		"express": "^4.17.1",
+		"jss": "^10.4.0",
+		"jss-rtl": "^0.3.0",
+		"md5": "^2.3.0",
+		"node-sass": "^4.14.1",
+		"plyr": "^3.6.2",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-lazy-load-image-component": "^1.5.0",
+		"react-redux": "^7.2.1",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "4.0.0",
+		"react-slick": "^0.27.11",
+		"react-ssr-scripts": "2.2.3",
+		"redux": "^4.0.5",
+		"serialize-javascript": "^4.0.0",
+		"slick-carousel": "^1.8.1",
+		"styled-components": "^5.1.1",
+		"video.js": "^7.8.4",
+		"videojs-contrib-hls": "^5.15.0",
+		"videojs-contrib-quality-levels": "^2.0.9",
+		"videojs-hls-quality-selector": "^1.1.1",
+		"videojs-landscape-fullscreen": "^11.1.0",
+		"videojs-seek-buttons": "^1.6.0",
+		"web-vitals": "^0.2.4"
+	},
+	"devDependencies": {
+		"babel-plugin-styled-components": "^1.11.1",
+		"clsx": "^1.1.1",
+		"history": "^5.0.0",
+		"prop-types": "^15.7.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"run-build": "npm run build && http-server build"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
+}

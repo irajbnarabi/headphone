@@ -1,0 +1,102 @@
+server:
+  port: 8087
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  profiles:
+    include: init
+  data:
+    mongodb:
+      auto-index-creation: true
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 1024KB
+      max-file-size: 50MB
+      max-request-size: 50MB
+      location: /tmp
+  mail:
+    host: smtp.yandex.com
+    port: 465
+    username: info@vidosign.com
+    password: password
+    properties:
+      mail.transport.protocol: smtp
+      mail.smtp.starttls.enable: false
+      mail.smtp.ssl.trust: "*"
+      mail.smtp.starttls.required: false
+      mail.smtp.ssl.enable: true
+      mail.smtp.ssl.required: true
+      mail.smtp.auth: true
+      mail.smtp.connectiontimeout: 5000
+      mail.smtp.timeout: 5000
+      mail.smtp.writetimeout: 5000
+rest:
+  backend: https://api.vidosign.com
+  cdn:
+    basePath: https://static.vidosign.com/files/
+  exceptions:
+    org.springframework.web.HttpRequestMethodNotSupportedException: 400
+  storage:
+    path: /static
+  home:
+    config:
+      path:
+        movies: /home-movies.json
+        series: /home-series.json
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "*"
+    allowed-headers: "*"
+search:
+  host: elasticsearch
+  port: 9200
+
+users:
+  max-parallel-login: 3
+  user-token-expiry-days: 90
+  access-token-expiry-minutes: 1000
+  registration-email: info@vidosign.com
+  mongodb:
+    host: mongo
+    port: 27017
+    database: users
+videos:
+  mongodb:
+    host: mongo
+    port: 27017
+    database: videos
+
+messaging:
+  kavehnegar-api-key: token
+  default-sms-sender: 10008663
+  max-sms-count-per-mobile: 10
+  max-sms-count-reset-period-hours: 1
+  min-time-between-two-sms-minutes: 1
+  verify-template: verify-sms
+  sms-enabled: true
+  email:
+    enabled: true
+
+social:
+  mongodb:
+    host: mongo
+    port: 27017
+    database: social
+
+key-value-store:
+  mongodb:
+    host: mongo
+    port: 27017
+    database: kvstore
+
+analytics:
+  mongodb:
+    host: mongo
+    port: 27017
+    database: analytics
+  redis:
+    standalone:
+      host: redis
+      port: 6379
+      password: password

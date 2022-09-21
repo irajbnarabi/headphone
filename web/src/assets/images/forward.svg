@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g id="Group_306" data-name="Group 306" transform="translate(-421 -158)">
+        <g id="Group_311" data-name="Group 311" transform="translate(430 170)">
+            <text id="_۳۰_ثانیه" data-name="۳۰ ثانیه" transform="translate(27.4 30.28)" fill="#fff" font-size="11" font-family="Nazanintar">
+                <tspan x="-13.669" y="0" xml:space="preserve"> ثانیه</tspan>
+                <tspan y="0">۳۰</tspan>
+            </text>
+            <g id="Group_317" data-name="Group 317" transform="translate(-1.82 -1.628)">
+                <g id="Group_312" data-name="Group 312" transform="translate(22.19 0)">
+                    <path id="Path_129" data-name="Path 129" d="M122.415,774.86,110.5,767.981v13.758Z" transform="translate(-110.5 -767.981)" fill="#fff"/>
+                    <path id="Path_130" data-name="Path 130" d="M106.415,774.86,94.5,767.981v13.758Z" transform="translate(-82.586 -767.981)" fill="#fff"/>
+                </g>
+                <path id="Path_131" data-name="Path 131" d="M126.5,802.228a25.01,25.01,0,0,1,25.01-25.01" transform="translate(-126.5 -770.339)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+            </g>
+        </g>
+        <rect id="Rectangle_648" data-name="Rectangle 648" width="60" height="60" transform="translate(421 158)" fill="none"/>
+    </g>
+</svg>

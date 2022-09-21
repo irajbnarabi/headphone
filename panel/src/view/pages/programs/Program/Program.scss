@@ -1,0 +1,148 @@
+.program {
+	width: 100%;
+
+	> *:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.program-form {
+		> *:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.program-tags {
+		display: flex;
+		flex-wrap: wrap;
+
+		> * {
+			margin-left: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.program-action {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-bottom: 20px;
+
+		> * {
+			min-width: 100px;
+		}
+
+		border-bottom: 1px dotted #e1e1e1;
+	}
+
+	label {
+		font-family: inherit;
+	}
+
+	.add-tag-btn {
+		margin-bottom: 1rem;
+	}
+
+	.tags-list {
+		display: flex;
+		flex-wrap: wrap;
+
+		& > div {
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
+
+	.program-is-enable {
+		display: flex;
+		direction: ltr;
+		justify-content: flex-end;
+
+		& > * {
+			margin: 0;
+		}
+	}
+
+	.seasons-of-program {
+		margin-bottom: 2rem;
+		padding: 1rem;
+		border: 1px solid #bcbcbc;
+
+		&.seasons-of-movies {
+			padding: 0;
+		}
+
+		.seasons {
+			&:first-child .season-header {
+				border-top: none;
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			.season-header {
+				border-top: 1px solid #b5b5b5;
+				margin-top: 1rem;
+				padding: 1rem 0;
+			}
+
+			.season-box {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(10%, 1fr));
+
+				& > div {
+					width: calc(100% - 1rem);
+					margin: auto;
+					background: #2d2d2d;
+					border-radius: 5px;
+					overflow: hidden;
+					color: white;
+					cursor: pointer;
+					position: relative;
+
+					&:hover {
+						& .operations {
+							opacity: 1;
+						}
+					}
+
+					img {
+						width: 150px;
+						height: 150px;
+					}
+
+					& > div {
+						padding: 0 1rem 8px;
+
+						&.episode-title {
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+						}
+
+						&.operations {
+							position: absolute;
+							top: 8px;
+							left: 8px;
+							right: 8px;
+							padding: 0;
+							direction: ltr;
+							opacity: 0;
+							transition: all 0.3s;
+						}
+					}
+				}
+			}
+
+			.movie-season-box > div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 1rem;
+				max-width: 500px;
+			}
+		}
+	}
+}
+
+.no-display {
+	display: none;
+}

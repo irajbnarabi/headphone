@@ -1,0 +1,117 @@
+@import '../../../assets/styles/mixins';
+
+.auth-container {
+	@include media-min-width(980px) {
+		height              : calc(100vh - 70px);
+		background-image    : url('../../../assets/images/big-login-bg.png');
+		filter              : blur(2px);
+		background-size     : cover;
+		opacity             : .3;
+		background-position : center;
+		background-repeat   : no-repeat;
+	}
+}
+
+.auth {
+	position    : relative;
+	padding-top : 6rem;
+
+	.auth-form {
+
+		& h1 {
+			text-align    : center;
+			margin-bottom : 3rem;
+			font-size     : 3rem;
+		}
+
+		& .phone-show {
+			text-align : center;
+			color      : white;
+		}
+
+		& .message {
+			text-align    : center;
+			margin-bottom : 1rem;
+			color         : #0068d0;
+
+			& .phone {
+				margin : 0 4px;
+			}
+		}
+
+		& .countdown {
+			text-align    : center;
+			margin-bottom : 1rem;
+			direction     : ltr;
+		}
+
+		& form {
+			padding : 0 3rem;
+
+			& label {
+				color     : #707070 !important;
+				transform : translate(-16px, 11px) scale(1);
+				font-size : 14px;
+			}
+
+			& input {
+				color         : #707070;
+				border-radius : 50px;
+				padding       : 0 1rem;
+				text-align    : center;
+				height        : 36px;
+				border        : .5px solid rgba(#707070, .5);
+				background    : transparent;
+				width         : 100%;
+				box-sizing    : border-box;
+				outline       : none;
+			}
+
+			& button {
+				width         : 100%;
+				height        : 36px;
+				border-radius : 50px;
+				background    : #0068d0 !important;
+				color         : white;
+				margin-top    : 1rem;
+			}
+		}
+
+		& .other-operation {
+			& div {
+				display         : flex;
+				justify-content : center;
+				align-items     : center;
+				margin          : 2rem 0;
+
+				& a,
+				& button {
+					color       : rgba(white, 0.5);
+					display     : flex;
+					align-items : center;
+					background  : transparent;
+					border      : 0;
+					font-size   : 1rem;
+					outline     : none;
+					box-shadow  : none;
+				}
+			}
+		}
+	}
+
+	@include media-min-width(980px) {
+		width           : 400px;
+		min-height      : 60vh;
+		margin          : auto;
+		position        : absolute;
+		top             : calc(50% - 25vh);
+		background      : black;
+		border-radius   : 5px;
+		left            : calc(50% - 200px);
+		padding-top     : 0;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+	}
+}
+

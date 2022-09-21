@@ -1,0 +1,40 @@
+$items-width: 25%;
+
+.tag-definition {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	> * {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.td-titles {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		> * {
+			width: $items-width;
+		}
+
+		margin-bottom: 10px;
+		padding: 0 15px;
+	}
+
+	.td-add-button {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.td-pagination {
+		padding: 20px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

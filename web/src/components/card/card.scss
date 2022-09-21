@@ -1,0 +1,41 @@
+@import '../../assets/styles/mixins';
+
+.content-item {
+	> div {
+		@include media-min-width(980px) {
+			padding : 0 12px;
+		}
+
+		& img {
+			border-radius : 5px;
+			border        : .5px solid rgba(#707070, .5);
+			max-height    : 208px;
+		}
+
+		& .item-title {
+			display    : block;
+			margin-top : 8px;
+			font-size  : 14px;
+		}
+	}
+
+	@include media-max-width(979px) {
+		display : inline-block;
+		width   : 154px;
+		height  : 204px;
+		margin  : 0 9px;
+		color   : white;
+
+		&:first-child {
+			margin-right : 24px;
+		}
+
+		&:last-child {
+			margin-left : 24px;
+		}
+	}
+
+	@include media-min-width(980px) {
+		width : 10%;
+	}
+}

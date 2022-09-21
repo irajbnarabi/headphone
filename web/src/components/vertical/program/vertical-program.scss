@@ -1,0 +1,36 @@
+@import '../../../assets/styles/mixins';
+
+.vertical-movie {
+	background : #333333;
+
+	& > div {
+		& .vertical-header {
+			display     : flex;
+			padding     : 1rem 24px 8px 24px;
+			direction   : rtl;
+			font-size   : 18px;
+			color       : white;
+			font-weight : bold;
+			@include media-min-width(1440px) {
+				padding : 1rem 0 8px;
+			}
+		}
+
+		& hr.light-custom-hr {
+			margin-bottom : 18px;
+		}
+
+		& .vertical-body {
+			& div:last-child {
+				& hr.light-custom-hr {
+					border : 0;
+				}
+			}
+		}
+
+		@include media-min-width(1440px) {
+			max-width : 1440px;
+			margin    : auto;
+		}
+	}
+}

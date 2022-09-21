@@ -1,0 +1,15 @@
+.rule-modal {
+	direction: rtl;
+	padding: 25px 30px;
+	width: 500px;
+
+	> *:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.rmm-content {
+		> *:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

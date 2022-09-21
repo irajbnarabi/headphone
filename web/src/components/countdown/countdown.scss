@@ -1,0 +1,14 @@
+.time {
+	display         : flex;
+	justify-content : center;
+
+	& button {
+		direction   : rtl;
+		display     : flex;
+		align-items : center;
+		background  : none;
+		border      : 0;
+		color       : rgba(white, 0.5);
+		font-size   : 1rem;
+	}
+}

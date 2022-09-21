@@ -1,0 +1,31 @@
+.discount-modal {
+	direction: rtl;
+
+	.discount-modal-paper {
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		min-width: 500px;
+		margin: auto;
+		padding: 20px;
+
+		& #dialog-title {
+			padding: 1rem 0;
+		}
+
+		> form > * {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			* {
+				font-family: inherit;
+			}
+
+			&.activate-discount {
+				width: 100%;
+				margin: 0 0 1rem;
+			}
+		}
+	}
+}

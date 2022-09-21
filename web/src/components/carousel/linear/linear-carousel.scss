@@ -1,0 +1,80 @@
+@import '../../../assets/styles/mixins';
+
+.linear-carousel {
+	direction     : rtl;
+	display       : flex;
+	margin-bottom : 18px;
+	overflow-x    : auto;
+	white-space   : nowrap;
+
+	& .title {
+		min-width    : 90px;
+		font-size    : 14px;
+		display      : inline-flex;
+		align-items  : center;
+		padding-left : 1rem;
+		@include media-max-width(1440px) {
+			padding : 0 24px;
+		}
+
+		&.blue-title {
+			color         : #0068d0;
+			font-weight   : bold;
+			padding-left  : 0;
+			padding-right : 1rem;
+		}
+	}
+
+	& .movies {
+		direction : rtl;
+		display   : inline-flex;
+		@include media-min-width(980px) {
+			display : flex;
+			width   : calc(100% - 244px);
+		}
+
+		@include media-min-width(1440px) {
+			width : calc(100% - 212px);
+		}
+
+		& .item {
+			display     : inline-block;
+			width       : 66px;
+			margin-left : 18px;
+
+			@include media-min-width(980px) {
+				width  : 10%;
+				margin : 0;
+			}
+
+			& > div {
+				@include media-min-width(980px) {
+					padding : 0 8px;
+				}
+
+				& img {
+					border        : .5px solid rgba(#707070, .5);
+					border-radius : 5px;
+					overflow      : hidden;
+					@include media-max-width() {
+						height : 80%;
+					}
+				}
+
+				& .box-title {
+					display       : block;
+					color         : white;
+					font-size     : 12px;
+					overflow      : hidden;
+					text-overflow : ellipsis;
+					white-space   : nowrap;
+					margin-top    : 4px;
+
+					@include media-min-width(980px) {
+						font-size : 1rem;
+					}
+				}
+			}
+		}
+	}
+}

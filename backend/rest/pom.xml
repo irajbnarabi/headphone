@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>rest</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>ir.headphone</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>spi</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>user</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>video</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>messaging</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>social</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>analytics</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>nl.basjes.parse.useragent</groupId>
+            <artifactId>yauaa</artifactId>
+            <version>5.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.2.32</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.14</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>search</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>payment</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ir.headphone</groupId>
+            <artifactId>key-value-store</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

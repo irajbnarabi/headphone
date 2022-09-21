@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .cls-2,.cls-4{fill:none}.cls-2{stroke:#fff}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="Group_250" data-name="Group 250" opacity="1" transform="translate(-32 -2)">
+        <g id="Group_246" data-name="Group 246" transform="translate(-70.67 -668)">
+            <g id="Rectangle_513" class="cls-2" data-name="Rectangle 513">
+                <path d="M0 0H20V19H0z" class="cls-5" transform="translate(107.67 676)"/>
+                <path d="M0.5 0.5H19.5V18.5H0.5z" class="cls-4" transform="translate(107.67 676)"/>
+            </g>
+            <path id="Line_233" fill="none" stroke="#fff" stroke-width="1.5px" d="M0 0L18.341 0" data-name="Line 233" transform="translate(108.5 685.5)"/>
+            <g id="Rectangle_514" class="cls-2" data-name="Rectangle 514" transform="translate(110.67 678)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_522" class="cls-2" data-name="Rectangle 522" transform="translate(110.67 688)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_517" class="cls-2" data-name="Rectangle 517" transform="translate(110.67 680)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_521" class="cls-2" data-name="Rectangle 521" transform="translate(110.67 690)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_519" class="cls-2" data-name="Rectangle 519" transform="translate(110.67 682)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_520" class="cls-2" data-name="Rectangle 520" transform="translate(110.67 692)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_515" class="cls-2" data-name="Rectangle 515" transform="translate(123.67 678)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_523" class="cls-2" data-name="Rectangle 523" transform="translate(123.67 688)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_516" class="cls-2" data-name="Rectangle 516" transform="translate(123.67 680)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_524" class="cls-2" data-name="Rectangle 524" transform="translate(123.67 690)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_518" class="cls-2" data-name="Rectangle 518" transform="translate(123.67 682)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+            <g id="Rectangle_525" class="cls-2" data-name="Rectangle 525" transform="translate(123.67 692)">
+                <path d="M0 0H1V1H0z" class="cls-5"/>
+                <rect x=".5" y=".5" class="cls-4"/>
+            </g>
+        </g>
+        <g id="Group_248" data-name="Group 248" transform="translate(-1277.335 -1156.539)">
+            <path id="Rectangle_8" d="M0 0H30V30H0z" class="cls-4" data-name="Rectangle 8" transform="translate(1309.335 1158.539)"/>
+        </g>
+    </g>
+</svg>

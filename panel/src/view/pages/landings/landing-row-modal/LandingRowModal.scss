@@ -1,0 +1,43 @@
+.landing-row-modal {
+	direction: rtl;
+
+	.landing-row-modal-paper {
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		margin: auto;
+		padding: 20px;
+
+		& #simple-dialog-title {
+			padding: 1rem 0;
+		}
+
+		form > * {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			* {
+				font-family: inherit;
+
+				&.show-object {
+					& > * {
+						padding: 8px 1rem;
+						box-sizing: border-box;
+
+						& > * {
+							margin: 0;
+
+							&.object-header {
+								display: flex;
+								direction: rtl;
+								justify-content: space-between;
+								align-items: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

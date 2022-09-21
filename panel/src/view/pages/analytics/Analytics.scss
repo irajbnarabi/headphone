@@ -1,0 +1,47 @@
+.analytics-base-container {
+	width: 100%;
+
+	.analytics-container {
+		display: flex;
+
+		> * {
+			width: 50%;
+			padding: 1rem;
+			box-sizing: border-box;
+		}
+
+		.analytics-form {
+			.analytics-range {
+				display: flex;
+
+				> * {
+					width: 49.5%;
+
+					&:first-child {
+						margin-left: 1.5%;
+					}
+				}
+			}
+
+			form {
+				margin-top: 2rem;
+
+				> * {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+
+		.analytics-chart {
+			& > div {
+				&:first-child {
+					height: 450px;
+				}
+
+				&:last-child {
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
+}

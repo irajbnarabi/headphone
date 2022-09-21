@@ -1,0 +1,45 @@
+.authentication-dialog-paper {
+	direction: rtl;
+	padding: 25px 30px;
+	width: 300px;
+
+	> *:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.authentication-dialog-title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+
+		> *:not(:last-child) {
+			margin-left: 5px;
+		}
+	}
+
+	.authentication-dialog-content {
+		display: flex;
+		flex-direction: column;
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+			* {
+				font-family: inherit;
+			}
+		}
+	}
+
+	.authentication-dialog-action {
+		display: flex;
+		flex-direction: column;
+		> *:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		.authentication-redirect-helper {
+			font-size: small;
+		}
+	}
+}

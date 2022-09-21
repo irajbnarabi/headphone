@@ -1,0 +1,107 @@
+@import '../../assets/styles/mixins';
+
+#navigator {
+	position        : fixed;
+	bottom          : 0;
+	height          : 60px;
+	width           : 100%;
+	justify-content : space-between;
+	overflow        : hidden;
+	z-index         : 1111111;
+	direction       : ltr;
+	display         : none;
+	background      : rgba(0, 0, 0, 0.85);
+	backdrop-filter : blur(20px);
+	@include border-top-radius();
+	@include media-max-width() {
+		display : flex;
+	}
+
+	& div {
+		min-width : 60px;
+
+		&.MuiBottomNavigation-root {
+			height     : 100%;
+			width      : 100%;
+			background : transparent;
+
+			& button {
+				height        : 100%;
+				border-radius : 0;
+				padding       : 0;
+				width         : 100%;
+
+				& .MuiBottomNavigationAction-label {
+					font-family : iransans, serif;
+					color       : rgba(white, 0.5);
+					font-size   : 10px;
+					margin-top  : 4px;
+				}
+
+				& .MuiButton-label {
+					display : block;
+
+					& .icon-box {
+						display         : flex;
+						justify-content : center;
+					}
+				}
+
+				&.Mui-selected {
+					& * {
+						color : white;
+					}
+
+					& .icon {
+						&.icon-movies {
+							background-image : url('../../assets/images/mobile-menu/movies-white.svg');
+						}
+
+						&.icon-series {
+							background-image : url('../../assets/images/mobile-menu/tv-white.svg');
+						}
+
+						&.icon-fav-list {
+							background-image : url('../../assets/images/mobile-menu/fav-list-white.svg');
+						}
+
+						&.icon-search {
+							background-image : url('../../assets/images/mobile-menu/search-white.svg');
+						}
+
+						&.icon-more {
+							background-image : url('../../assets/images/mobile-menu/more-white.svg');
+						}
+					}
+				}
+
+				& .icon {
+					width               : 24px;
+					height              : 24px;
+					background-size     : cover;
+					background-position : center;
+
+					&.icon-movies {
+						background-image : url('../../assets/images/mobile-menu/movies.svg');
+					}
+
+					&.icon-series {
+						background-image : url('../../assets/images/mobile-menu/tv.svg');
+					}
+
+					&.icon-fav-list {
+						background-image : url('../../assets/images/mobile-menu/fav-list.svg');
+					}
+
+					&.icon-search {
+						background-image : url('../../assets/images/mobile-menu/search.svg');
+					}
+
+					&.icon-more {
+						background-image : url('../../assets/images/mobile-menu/more.svg');
+					}
+				}
+			}
+		}
+	}
+}

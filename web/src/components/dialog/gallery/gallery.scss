@@ -1,0 +1,22 @@
+.gallery-dialog {
+	& .gallery-dialog-paper {
+		margin : 1rem;
+
+		& .gallery-content {
+			box-sizing : border-box;
+			padding    : 1rem;
+
+			& .gallery-title {
+				display         : flex;
+				align-items     : center;
+				justify-content : space-between;
+			}
+
+			& .gallery-data {
+				& video {
+					width : 100%;
+				}
+			}
+		}
+	}
+}

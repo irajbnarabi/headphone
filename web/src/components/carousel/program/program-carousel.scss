@@ -1,0 +1,40 @@
+@import '../../../assets/styles/mixins';
+
+.program-carousel {
+	max-width    : 1482px;
+	margin-left  : auto;
+	margin-right : auto;
+
+	& .carousel-header {
+		display         : flex;
+		direction       : rtl;
+		justify-content : space-between;
+		padding         : 1rem 24px;
+		align-items     : center;
+
+		& span:first-child {
+			font-weight : bold;
+			font-size   : 18px;
+		}
+
+		& span:last-child {
+			color     : #0068d0;
+			font-size : 12px;
+			cursor    : pointer;
+		}
+	}
+
+	& .carousel-body {
+		@include media-max-width() {
+			overflow-y  : hidden;
+			overflow-x  : auto;
+			white-space : nowrap;
+			direction   : rtl;
+			height      : 250px;
+		}
+		@include media-min-width(980px) {
+			display : flex;
+			padding : 0 11px;
+		}
+	}
+}

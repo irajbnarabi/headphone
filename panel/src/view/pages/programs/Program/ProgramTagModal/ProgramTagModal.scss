@@ -1,0 +1,53 @@
+.program-tag-modal {
+	direction: rtl;
+
+	.program-tag-modal-paper {
+		width: 60%;
+		padding: 15px 20px;
+
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+
+			* {
+				font-family: inherit;
+			}
+		}
+
+		.mtm-content {
+			> * {
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+
+			.mtm-bindings {
+				> * {
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
+				}
+
+				label {
+					margin: 0 !important;
+				}
+			}
+		}
+
+		.mtm-action {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+
+			> * {
+				width: fit-content;
+				min-width: 100px;
+			}
+		}
+	}
+}
+
+.mtm-select-item {
+	direction: rtl;
+}

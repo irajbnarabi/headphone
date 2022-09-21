@@ -1,0 +1,20 @@
+.confirm-modal {
+	direction: rtl;
+	padding: 25px 30px;
+	width: 300px;
+
+	> *:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.cm-action {
+		display: flex;
+		flex-direction: row;
+		> * {
+			flex-grow: 1;
+			&:not(:last-child) {
+				margin-left: 10px;
+			}
+		}
+	}
+}

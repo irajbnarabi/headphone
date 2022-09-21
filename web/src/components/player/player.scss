@@ -1,0 +1,30 @@
+@import '~video.js/dist/video-js.min.css';
+@import 'player-theme';
+//@import 'player-theme2';
+
+.main-container {
+	width    : 100vw;
+	height   : 100vh;
+	margin   : auto;
+	position : relative;
+
+	& .video-js {
+		width   : 100vw;
+		height  : 100vh;
+		padding : 0;
+	}
+
+	& .skip-titration {
+		position : absolute;
+		bottom   : 130px;
+		right    : 20px;
+		display  : block;
+		@include media-max-width() {
+			right : 10px;
+		}
+	}
+
+	& .no-display-skip {
+		display : none;
+	}
+}

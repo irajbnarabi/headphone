@@ -1,0 +1,88 @@
+@import 'src/assets/styles/mixins';
+
+.purchase-details-container {
+	min-height      : calc(100vh - 70px);
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	@include media-max-width() {
+		margin-bottom : 70px;
+	}
+
+	& .purchase-details {
+		display : block;
+
+		& h2 {
+			text-align  : center;
+			padding-top : 1rem;
+		}
+
+		& .purchase-details-box {
+			background    : white;
+			border-radius : 5px;
+			max-width     : 470px;
+			margin        : 24px auto;
+			width         : calc(100vw - 48px);
+			padding       : 68px;
+			box-sizing    : border-box;
+			@include media-max-width() {
+				padding : 24px;
+			}
+
+			& .title {
+				color          : black;
+				font-weight    : bold;
+				font-size      : 18px;
+				padding-bottom : 8px;
+				border-bottom  : 1px solid rgba(#707070, .5);
+
+				&.ticket {
+					img {
+						width         : 67px;
+						height        : auto;
+						border-radius : 5px;
+						border        : .5px solid rgba(#707070, .5);
+					}
+				}
+			}
+
+			& > * {
+				font-size       : 14px;
+				color           : black;
+				display         : flex;
+				align-items     : center;
+				justify-content : space-between;
+				padding         : 8px 0;
+				border-bottom   : 1px solid rgba(#707070, .5);
+
+				&.tax {
+					border-bottom : 1px solid black;
+				}
+
+				&.total {
+					font-weight : bold;
+				}
+
+				&.discount-code {
+					border-bottom : 1px solid black;
+				}
+
+				&.total-price {
+					border-bottom : 0;
+					font-weight   : bold;
+				}
+			}
+		}
+
+		& .return-to-purchases {
+			background    : #0068d0;
+			border-radius : 50px;
+			color         : white;
+			height        : 49px;
+			max-width     : 256px;
+			width         : 100%;
+			margin        : auto;
+			display       : block;
+		}
+	}
+}

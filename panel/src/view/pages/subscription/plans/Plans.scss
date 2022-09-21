@@ -1,0 +1,31 @@
+.header-subscription {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	h1 {
+		margin-top: 1rem;
+	}
+}
+
+.plans {
+	display: flex;
+	flex-wrap: wrap;
+
+	.plan-card {
+		background: #707070;
+		margin: 0 8px 1rem;
+		padding: 1rem;
+		box-sizing: border-box;
+		color: white;
+		position: relative;
+		width: calc(20% - 1rem);
+
+		.plan-operations {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: grid;
+		}
+	}
+}

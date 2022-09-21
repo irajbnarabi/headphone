@@ -1,0 +1,15 @@
+.register-dialog {
+	& .register-dialog-paper {
+		width      : 400px;
+		height     : 100%;
+		margin     : 0;
+		background : transparent;
+		box-shadow : none;
+
+		& .login-form {
+			& h1 {
+				color : white;
+			}
+		}
+	}
+}

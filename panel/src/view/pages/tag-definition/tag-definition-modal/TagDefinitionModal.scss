@@ -1,0 +1,59 @@
+.tag-definition-modal {
+	direction: rtl;
+
+	.tag-definition-modal-paper {
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		margin: auto;
+		padding: 20px;
+
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			* {
+				font-family: inherit;
+			}
+		}
+	}
+
+	.tdm-content {
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+
+		.tdm-content-array {
+			display: flex;
+			flex-direction: column;
+
+			> * {
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+			}
+
+			.tdm-field {
+				display: flex;
+				flex-direction: row;
+
+				.full-box {
+					flex-grow: 1;
+				}
+
+				.select-type {
+					& button {
+						height: 100%;
+					}
+				}
+
+				button {
+					padding: 1rem;
+				}
+			}
+		}
+	}
+}

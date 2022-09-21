@@ -1,0 +1,45 @@
+.tag-carousel {
+	margin-bottom : 1rem;
+	max-width     : 1482px;
+	margin-left   : auto;
+	margin-right  : auto;
+
+	& .carousel-header {
+		padding     : 1rem 24px;
+		direction   : rtl;
+		font-size   : 18px;
+		font-weight : bold;
+	}
+
+	& .carousel-body {
+		white-space : nowrap;
+		overflow    : auto;
+		direction   : rtl;
+
+		& .carousel-item {
+			display : inline-block;
+			margin  : 0 9px;
+
+			& img {
+				width         : 97px;
+				height        : 97px;
+				border        : .5px solid rgba(#707070, .5);
+				border-radius : 5px;
+				overflow      : hidden;
+			}
+
+			& .item-title {
+				font-size : 12px;
+				margin    : 10px 0;
+			}
+
+			&:first-child {
+				margin-right : 24px;
+			}
+
+			&:last-child {
+				margin-left : 24px;
+			}
+		}
+	}
+}

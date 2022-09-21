@@ -1,0 +1,112 @@
+@import '../../../assets/styles/mixins';
+
+.banner-tag {
+	margin  : 3rem 0 4.5rem 0;
+	padding : 0 24px;
+
+	& .banner-tag-container {
+		position      : relative;
+		height        : 100%;
+		border        : .5px solid rgba(#707070, .5);
+		border-radius : 5px;
+		padding       : 21% 24px;
+		@include media-max-width() {
+			padding : 17% 24px;
+		}
+		@include media-min-width(1440px) {
+			max-width    : 1440px;
+			margin-left  : auto;
+			margin-right : auto;
+			padding      : 0;
+			height       : 600px;
+		}
+
+		& .banner-tag-image:before {
+			content             : '';
+			background-size     : cover;
+			background-position : center;
+			position            : absolute;
+			top                 : 0;
+			left                : 0;
+			right               : 0;
+			bottom              : 0;
+			opacity             : 0.6;
+			z-index             : -1;
+		}
+
+		& .banner-tag-info {
+			text-align : right;
+			padding    : 24px;
+
+			@include media-max-width(500px) {
+				position : relative;
+				left     : 2rem;
+				top      : -2rem;
+			}
+
+			@include media-min-width(980px) {
+				position : absolute;
+				left     : 0;
+				right    : 0;
+				bottom   : 200px;
+				padding  : 16px 87px;
+			}
+
+			& .name {
+				font-size     : 26px;
+				font-weight   : bold;
+				margin-bottom : 8px;
+			}
+
+			& .title {
+				font-size : 20px;
+			}
+		}
+
+		& .tag-content {
+			position        : absolute;
+			bottom          : -25px;
+			left            : 0;
+			display         : flex;
+			justify-content : space-between;
+			box-sizing      : border-box;
+			right           : 0;
+			padding         : 0 18px;
+
+			@include media-min-width(980px) {
+				justify-content : start;
+				padding         : 0 87px;
+			}
+
+			& .tag-item {
+				width      : 81px;
+				height     : 109px;
+				font-size  : 10px;
+				color      : rgba(white, 0.5);
+				text-align : center;
+
+				& img {
+					border        : .5px solid rgba(#707070, .5);
+					border-radius : 5px;
+				}
+
+				& span {
+					display    : block;
+					margin-top : 4px;
+				}
+
+				@include media-min-width(980px) {
+					height      : 210px;
+					width       : 150px;
+					margin-left : 18px;
+					text-align  : right;
+
+					& span {
+						font-size  : 14px;
+						margin-top : 8px;
+					}
+				}
+			}
+		}
+	}
+}

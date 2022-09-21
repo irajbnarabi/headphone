@@ -1,0 +1,30 @@
+.program-tag {
+	background-color: rgba(78, 94, 200, 0.2);
+	padding: 0 10px;
+	border-radius: 3px;
+	width: fit-content;
+	cursor: pointer;
+
+	> * {
+		&:first-child {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			& button {
+				width: 3rem;
+				height: 3rem;
+			}
+		}
+
+		& small {
+			display: block;
+			direction: ltr;
+			margin-bottom: 4px;
+		}
+	}
+
+	&:hover {
+		background-color: rgba(78, 94, 200, 0.4);
+	}
+}

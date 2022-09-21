@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#000}
+        </style>
+    </defs>
+    <g id="Group_263" data-name="Group 263" transform="translate(1088 -504)">
+        <path id="Rectangle_1" fill="none" d="M0 0H36V36H0z" data-name="Rectangle 1" transform="translate(-1088 504)"/>
+        <path id="Line_262" d="M0 0L12 0" class="cls-2" data-name="Line 262" transform="translate(-1070.5 515.5)"/>
+        <path id="Line_263" d="M0 0L12 0" class="cls-2" data-name="Line 263" transform="translate(-1070.5 520.5)"/>
+        <path id="Line_268" d="M0 0L7 0" class="cls-2" data-name="Line 268" transform="translate(-1081.5 518.5)"/>
+        <path id="Line_264" d="M0 0L23 0" class="cls-2" data-name="Line 264" transform="translate(-1081.5 525.5)"/>
+        <path id="Line_265" d="M0 0L23 0" class="cls-2" data-name="Line 265" transform="translate(-1081.5 530.5)"/>
+        <path id="Line_269" d="M0 0L7 0" class="cls-2" data-name="Line 269" transform="rotate(90 -796.5 -281.5)"/>
+    </g>
+</svg>

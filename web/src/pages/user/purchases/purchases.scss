@@ -1,0 +1,135 @@
+@import 'src/assets/styles/mixins';
+
+.purchases-container {
+	margin    : 0 auto 70px;
+	max-width : 1440px;
+
+	& h2 {
+		padding : 12px 24px 1.5rem;
+		@include media-max-width(980px) {
+			text-align : center;
+		}
+	}
+
+	& .purchases-list-view {
+		@include media-max-width() {
+			padding-right : 24px;
+
+			& > div:nth-child(2) {
+				border-top : .5px solid rgba(#707070, .5);
+			}
+		}
+
+		& .purchases-list-header {
+			display : none;
+			@include media-min-width(980px) {
+				display : flex;
+			}
+		}
+
+		& .purchases-list-header,
+		& .purchase-item {
+			padding : 0 15px;
+
+			& > * {
+				margin      : 0 9px;
+				padding     : 14px 0;
+				display     : flex;
+				align-items : center;
+				@include media-min-width(980px) {
+					width         : 20%;
+					border-bottom : .5px solid rgba(#707070, .5);
+				}
+			}
+		}
+
+		& .purchase-item {
+			display         : flex;
+			justify-content : space-between;
+			@include media-max-width() {
+				padding       : 0 0 0 24px;
+				border-bottom : .5px solid rgba(#707070, .5);
+			}
+
+			& > * {
+				font-size : 14px;
+				color     : rgba(white, .5);
+
+				&.purchase-date {
+					display : none;
+					@include media-min-width(980px) {
+						display : flex;
+					}
+				}
+
+				&.title {
+					color       : white;
+					font-weight : bold;
+					display     : flex;
+					@include media-max-width() {
+						margin : 0;
+					}
+
+					img {
+						width         : 67px;
+						height        : auto;
+						border-radius : 5px;
+						border        : .5px solid rgba(#707070, .5);
+					}
+
+					& .title-content {
+						width       : 100%;
+						display     : flex;
+						align-items : center;
+						padding     : 0 1rem;
+
+						@include media-max-width(980px) {
+							display : block;
+						}
+					}
+
+					& .purchase-date-under-title {
+						display    : block;
+						color      : rgba(white, .5);
+						margin-top : 5px;
+						@include media-min-width(980px) {
+							display : none;
+						}
+					}
+
+					&:not(.ticket) {
+						@include media-max-width(980px) {
+							display : block;
+						}
+					}
+				}
+
+				&.purchase-off {
+					display : none;
+					@include media-min-width(980px) {
+						display : block;
+					}
+				}
+
+				&.status {
+					& .success {
+						color : #00962e;
+					}
+
+					& .failed {
+						color : red;
+					}
+				}
+
+				&.purchases-details {
+					justify-content : center;
+					display         : none;
+					cursor          : pointer;
+					@include media-min-width(980px) {
+						display : flex;
+					}
+				}
+			}
+		}
+	}
+}

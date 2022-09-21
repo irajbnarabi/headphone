@@ -1,0 +1,91 @@
+version: '3.1'
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  elasticsearch:
+    container_name: elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.1
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    cap_add:
+      - IPC_LOCK
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  redis:
+    container_name: redis
+    image: 'docker.io/bitnami/redis:6.0-debian-10'
+    environment:
+      #      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+      - REDIS_PASSWORD=Mvdh75b4J
+    ports:
+      - '6378:6379'
+    volumes:
+      - "./data/redis/data:/bitnami/redis"
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./fullchain.pem:/ssl/fullchain.pem
+      - ./privkey.pem:/ssl/privkey.pem
+      - ./fullchain1.pem:/ssl/fullchain1.pem
+      - ./privkey1.pem:/ssl/privkey1.pem
+      - ./data/static:/static/files
+    depends_on:
+      - api
+      - web
+      - panel
+
+  api:
+    container_name: api
+    restart: always
+    build:
+      dockerfile: ./Dockerfile
+      context: ./backend
+    volumes:
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+      - "./data/static:/static"
+      - "./application.yml:/config/application.yml"
+    ports:
+      - "9001:8087"
+    depends_on:
+      - mongo
+      - elasticsearch
+      - redis
+
+  web:
+    container_name: web
+    build:
+      dockerfile: ./Dockerfile
+      context: ./web
+    ports:
+      - "4001:3001"
+
+  panel:
+    container_name: panel
+    build:
+      dockerfile: ./Dockerfile
+      context: ./panel
+    ports:
+      - "4002:3002"

@@ -1,0 +1,27 @@
+@mixin border-top-radius($size: 12px) {
+	border-top-right-radius: $size;
+	border-top-left-radius: $size;
+}
+
+@mixin border-bottom-radius($size: 12px) {
+	border-bottom-right-radius: $size;
+	border-bottom-left-radius: $size;
+}
+
+@mixin media-min-max-width($min-width: 320px, $max-width: 500px) {
+	@media (max-width: $max-width) and (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin media-min-width($min-width: 320px) {
+	@media (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin media-max-width($min-width: 500px) {
+	@media (min-width: $min-width) {
+		@content;
+	}
+}

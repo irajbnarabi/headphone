@@ -1,0 +1,207 @@
+.promotion-banner {
+	max-width : 1440px;
+	margin    : auto;
+
+	& .slick-slider {
+
+		& .promotion-box {
+			height     : calc(100vh - 300px);
+			outline    : none !important;
+			box-shadow : none !important;
+			position   : relative;
+
+			& .linear-gradient-box {
+				position : absolute;
+				width    : 200px;
+				height   : 100%;
+				z-index  : 1;
+
+				&.left {
+					left       : 0;
+					background : linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+				}
+
+				&.right {
+					right      : 0;
+					background : linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+				}
+			}
+
+			& .promotion-bg {
+				height              : 100%;
+				background-position : center;
+				background-repeat   : no-repeat;
+				background-size     : cover;
+				position            : relative;
+
+				& .promotion-info {
+					position   : absolute;
+					left       : 0;
+					right      : 0;
+					bottom     : 0;
+					height     : 200px;
+					background : linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+
+					& > div {
+						position        : absolute;
+						bottom          : 0;
+						right           : 0;
+						left            : 0;
+						padding         : 44px 54px;
+						display         : flex;
+						direction       : rtl;
+						align-items     : center;
+						justify-content : space-between;
+
+						& > div {
+							display : flex;
+							z-index : 1;
+
+							& button {
+								&.add-to-fav {
+									& img {
+										width  : 36px;
+										height : 36px;
+									}
+								}
+
+								&.add-to-fav,
+								&.pause,
+								&.full-screen {
+									width         : 40px;
+									height        : 44px;
+									border-radius : 50%;
+									color         : white;
+									padding       : 0;
+									min-width     : 44px;
+								}
+
+								&.full-screen {
+									margin-right : 1rem;
+								}
+
+								&.watch-movie {
+									height        : 44px;
+									border-radius : 50px;
+									background    : #0068d0;
+									color         : white;
+									padding       : 0.5rem 1rem;
+									margin-right  : 1rem;
+
+									& a {
+										display : flex;
+									}
+								}
+
+								&.buy-ticket {
+									height        : 44px;
+									border-radius : 50px;
+									background    : #FCBD47;
+									color         : black;
+									padding       : 0.5rem 2rem;
+									margin-right  : 1rem;
+								}
+							}
+
+							&.like-dislike {
+								display         : flex;
+								align-items     : center;
+								justify-content : center;
+								margin          : 8px 0;
+
+								& .like-info {
+									background-color : rgba(#00962e, .7);
+									color            : white;
+									padding          : 4px 8px;
+									border-radius    : 50px;
+									display          : flex;
+									align-items      : center;
+
+									& .like-percentage {
+										display     : flex;
+										align-items : center;
+
+										& > span {
+											margin : 0 4px;
+										}
+									}
+
+									& .like-count {
+										margin : 0 8px 0 2px;
+									}
+								}
+
+								& .liked * {
+									color : #00962e;
+								}
+
+								& .disliked * {
+									color : #D00000;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		& .slick-arrow {
+			z-index : 1;
+			width   : 30px;
+			height  : 30px;
+
+			&.slick-next {
+				right     : 30px;
+				transform : rotate(-135deg);
+			}
+
+			&.slick-prev {
+				left      : 30px;
+				transform : rotate(45deg);
+			}
+
+			&:before {
+				content   : '∟';
+				font-size : 2rem;
+				color     : rgba(255, 255, 255, 0.7);
+			}
+		}
+
+		& .slick-dots {
+			bottom    : 58px;
+			direction : rtl;
+			width     : 400px;
+			left      : calc(50% - 200px);
+
+			& li {
+				padding : 0;
+				margin  : 0;
+
+				& button {
+					padding : 0;
+
+					&:before {
+						content       : '';
+						width         : 8px;
+						height        : 8px;
+						background    : transparent;
+						border-radius : 50%;
+						border        : 1px solid rgba(white, .7);
+					}
+				}
+
+				&.slick-active {
+					& button {
+						&:before {
+							content       : '';
+							width         : 8px;
+							height        : 8px;
+							background    : white;
+							border-radius : 50%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

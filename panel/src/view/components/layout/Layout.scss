@@ -1,0 +1,90 @@
+$appbar-height: 60px;
+$sidebar-width: 200px;
+$appbar-border-size: 1px;
+
+.movito-layout {
+	direction: rtl;
+
+	.layout-sidebar {
+		&,
+		> * {
+			border-left: 1px solid #fff;
+		}
+
+		.layout-logo {
+			width: $sidebar-width;
+			min-height: calc(#{$appbar-height} - #{$appbar-border-size});
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-bottom: 1px solid #fff;
+		}
+
+		.layout-sidebar-paper {
+			width: $sidebar-width;
+			background-color: rgba(0, 0, 0, 0.87);
+			color: #fff;
+		}
+
+		.layout-sidebar-list {
+			.layout-sidebar-list-item {
+				justify-content: space-between;
+
+				&.active {
+					color: #ababab;
+				}
+
+				&:hover {
+					background: none;
+					color: #ababab;
+				}
+			}
+
+			.layout-sidebar-children-list {
+				.layout-sidebar-children-list-item {
+					color: #fff;
+					font-size: small;
+					padding-right: 20%;
+
+					&:hover {
+						background: none;
+						color: #ababab;
+					}
+
+					&.active {
+						color: #ababab;
+					}
+				}
+			}
+		}
+	}
+
+	.layout-appbar {
+		height: $appbar-height;
+		width: calc(100% - #{$sidebar-width});
+		float: left;
+		background-color: rgba(0, 0, 0, 0.87);
+		box-shadow: none;
+		border-bottom: 1px solid #fff;
+
+		.layout-appbar-items {
+			height: 100%;
+			padding: 10px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			color: #fff;
+		}
+
+		.appbar-profile {
+			color: white;
+		}
+	}
+
+	main {
+		padding: calc(#{$appbar-height} + 20px) calc(#{$sidebar-width} + 20px) 20px 20px;
+		display: flex;
+		flex-grow: 1;
+	}
+}

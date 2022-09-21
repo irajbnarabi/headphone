@@ -1,0 +1,29 @@
+.share-title {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	padding         : 1rem;
+}
+
+.socials {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	margin-bottom   : 1rem;
+
+	& .telegram-color {
+		color : #32AFED;
+	}
+
+	& .twitter-color {
+		color : #1DA1F2;
+	}
+
+	& .facebook-color {
+		color : #4267B2;
+	}
+
+	& .whatsapp-color {
+		color : #4AC959;
+	}
+}

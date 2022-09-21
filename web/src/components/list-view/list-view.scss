@@ -1,0 +1,70 @@
+@import '../../assets/styles/mixins';
+
+.box-of-items {
+	display   : flex;
+	flex-wrap : wrap;
+	padding   : 12px;
+
+	& .card {
+		flex            : 0 0 50%;
+		max-width       : 50%;
+		padding         : 12px;
+		box-sizing      : border-box;
+		display         : flex;
+		align-items     : center;
+		justify-content : space-between;
+
+		& img {
+			max-width     : 66px;
+			min-width     : 66px;
+			height        : 89px;
+			border        : .5px solid rgba(#707070, .5);
+			border-radius : 5px;
+		}
+
+		& .card-info {
+			padding-right : 8px;
+			text-align    : right;
+			width         : 100%;
+
+			& span {
+				font-size : 12px;
+				display   : block;
+
+				&:last-child {
+					margin-top : 4px;
+					color      : rgba(white, 0.5);
+				}
+			}
+		}
+
+		@include media-min-max-width(560px, 700px) {
+			flex      : 0 0 33.3%;
+			max-width : 33.3%;
+		}
+		@include media-min-max-width(700px, 980px) {
+			flex      : 0 0 25%;
+			max-width : 25%;
+		}
+		@include media-min-max-width(980px, 1400px) {
+			flex      : 0 0 20%;
+			max-width : 20%;
+
+			& img {
+				max-width : 86px;
+				min-width : 86px;
+				height    : 129px;
+			}
+		}
+		@include media-min-width(1400px) {
+			flex      : 0 0 20%;
+			max-width : 20%;
+
+			& img {
+				max-width : 150px;
+				min-width : 150px;
+				height    : 210px;
+			}
+		}
+	}
+}

@@ -1,0 +1,162 @@
+@import '../../../assets/styles/mixins';
+
+.profile-bg-image {
+	@include media-min-width(980px) {
+		height              : calc(100vh - 70px);
+		background-image    : url('../../../assets/images/big-login-bg.png');
+		filter              : blur(2px);
+		background-size     : cover;
+		opacity             : .3;
+		background-position : center;
+		background-repeat   : no-repeat;
+	}
+}
+
+.profile-modal {
+	.user-profile-section {
+		text-align : center;
+		margin     : 6rem 0;
+
+		& .user-name {
+			font-weight : bold;
+			font-size   : 1.5rem;
+			color       : white;
+		}
+
+		& .subscription-section {
+			padding   : 0 3rem;
+			color     : white;
+			max-width : 290px;
+			margin    : 0 auto 3rem;
+			@include media-max-width() {
+				padding : 0 1rem;
+			}
+
+			& > div {
+				margin : 2rem 0 1rem 0;
+
+				&.remaining-time-subscription {
+					border        : 1px solid white;
+					border-radius : 50px;
+					height        : 34px;
+					position      : relative;
+
+					& .remaining-days-circle {
+						position      : absolute;
+						width         : 54px;
+						height        : 54px;
+						border        : 1px solid white;
+						border-radius : 50%;
+						top           : -10px;
+						left          : calc(50% - 28px);
+						background    : #242424;
+						@include media-max-width() {
+							background : black;
+						}
+
+						& > * {
+							display  : block;
+							width    : 100%;
+							position : absolute;
+
+							&:first-child {
+								font-size   : 23px;
+								font-weight : bold;
+								top         : 5px;
+							}
+
+							&:last-child {
+								font-size : 14px;
+								bottom    : 9px;
+							}
+						}
+					}
+
+					& .remaining-days-title {
+						display         : flex;
+						height          : 100%;
+						align-items     : center;
+						justify-content : space-between;
+						padding         : 0 16px;
+						font-size       : 14px;
+						color           : rgba(white, .5);
+					}
+				}
+			}
+
+			& button {
+				border-radius : 50px;
+				background    : #0068d0 !important;
+				color         : white !important;
+			}
+		}
+
+		& .other-operation-items {
+			padding-right : 1rem;
+
+			& button {
+				border-top      : .5px solid rgba(#707070, .5);
+				display         : flex;
+				align-items     : center;
+				justify-content : space-between;
+				padding         : 11.5px 0 11.5px 1rem;
+				border-radius   : 0;
+			}
+
+			& button:last-child {
+				border-bottom : .5px solid rgba(#707070, .5);
+				color         : #ff0000;
+			}
+		}
+
+		& > div:first-child {
+			@include media-min-width(980px) {
+				margin : auto;
+			}
+		}
+	}
+
+	@include media-min-width(980px) {
+		width           : 400px;
+		min-height      : 60vh;
+		margin          : auto;
+		position        : absolute;
+		top             : calc(50% - 25vh);
+		background      : #242424;
+		border-radius   : 5px;
+		left            : calc(50% - 200px);
+		padding-top     : 0;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+
+		& .user-profile-section {
+			width : 100%;
+		}
+	}
+}
+
+
+.logout-modal {
+	& .MuiPaper-root {
+		background : #4c4c4c;
+		color      : white;
+		font-size  : 14px;
+		padding    : 1rem 0;
+		@include border-top-radius();
+
+		& .operation-title {
+			padding : 0 1rem;
+		}
+
+		& .operation-logout {
+			display         : flex;
+			justify-content : space-between;
+			margin-top      : 8px;
+
+			& button {
+				color : #0068d0;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_307" data-name="Group 307" transform="translate(-186 -158)">
+    <g id="Group_314" data-name="Group 314" transform="translate(195 170)">
+      <g id="Group_313" data-name="Group 313" transform="translate(0 0)">
+        <g id="Group_312" data-name="Group 312" transform="translate(-2.82 -1.628)">
+          <path id="Path_129" data-name="Path 129" d="M110.5,774.86l11.914-6.879v13.758Z" transform="translate(-98.586 -767.981)" fill="#fff"/>
+          <path id="Path_130" data-name="Path 130" d="M94.5,774.86l11.914-6.879v13.758Z" transform="translate(-94.5 -767.981)" fill="#fff"/>
+        </g>
+        <path id="Path_131" data-name="Path 131" d="M151.51,802.228a25.01,25.01,0,0,0-25.01-25.01" transform="translate(-108.311 -771.967)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <text id="_۱۰_ثانیه" data-name="۱۰ ثانیه" transform="translate(14.516 29.893)" fill="#fff" font-size="11" font-family="Nazanintar"><tspan x="-12.445" y="0" xml:space="preserve"> ثانیه</tspan><tspan y="0">۱۰</tspan></text>
+    </g>
+    <rect id="Rectangle_650" data-name="Rectangle 650" width="60" height="60" transform="translate(186 158)" fill="none"/>
+  </g>
+</svg>

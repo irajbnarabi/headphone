@@ -1,0 +1,37 @@
+.profile-dialog {
+	& .profile-dialog-paper {
+		width      : 400px;
+		height     : 100%;
+		margin     : 0;
+		box-shadow : none;
+		background : transparent;
+		position   : absolute;
+		top        : 70px;
+		left       : 0;
+
+		& .profile-modal {
+			position : absolute;
+			left     : 0;
+			top      : 15px;
+
+			&:after {
+				bottom              : 100%;
+				left                : 11%;
+				border              : solid transparent;
+				content             : "";
+				height              : 0;
+				width               : 0;
+				position            : absolute;
+				pointer-events      : none;
+				border-color        : rgba(36, 36, 36, 0);
+				border-bottom-color : #242424;
+				border-width        : 15px;
+				margin-left         : -15px;
+			}
+		}
+	}
+
+	& .MuiBackdrop-root {
+		top : 70px;
+	}
+}

@@ -1,0 +1,31 @@
+.tag-modal {
+	direction: rtl;
+
+	.tag-modal-paper {
+		display: flex;
+		flex-direction: column;
+		width: 600px;
+		margin: auto;
+		padding: 20px;
+
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+
+			* {
+				font-family: inherit;
+			}
+		}
+
+		& form {
+			& > div {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+.MuiPickersBasePicker-pickerView {
+	direction: rtl;
+}

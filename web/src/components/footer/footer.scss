@@ -1,0 +1,28 @@
+@import '../../assets/styles/mixins';
+
+footer {
+	display: flex;
+	max-width: 1440px;
+	margin: auto;
+	@include media-max-width() {
+		display: none;
+	}
+
+	.footer-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 2rem;
+
+		.enamad {
+			width: 130px;
+			min-height: 130px;
+			max-height: 130px;
+			& > * {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

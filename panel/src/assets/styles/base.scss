@@ -1,0 +1,24 @@
+@import 'fonts/fonts';
+@import 'toast.styles';
+@import 'material-icons';
+
+body {
+	background: white;
+	color: black;
+	margin: 0;
+
+	& a {
+		text-decoration: none;
+	}
+}
+
+.MuiAutocomplete-popper,
+.MuiPopover-root {
+	direction: rtl;
+}
+
+.text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

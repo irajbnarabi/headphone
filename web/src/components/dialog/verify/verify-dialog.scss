@@ -1,0 +1,19 @@
+.verify-dialog {
+	& .verify-dialog-paper {
+		width      : 400px;
+		height     : 100%;
+		margin     : 0;
+		background : transparent;
+		box-shadow : none;
+
+		& .verify-form {
+			& h1 {
+				color : white;
+			}
+
+			& .time * {
+				color : white;
+			}
+		}
+	}
+}

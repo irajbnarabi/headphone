@@ -1,0 +1,27 @@
+@import '../../../assets/styles/mixins';
+
+.horizontal-movie {
+	background : #333333;
+
+	& > div {
+		max-width : 1440px;
+		margin    : auto;
+
+		& .horizontal-header {
+			display         : flex;
+			justify-content : space-between;
+			align-items     : center;
+			padding         : 1rem 24px 8px 24px;
+			direction       : rtl;
+			font-weight     : bold;
+
+			@include media-min-width(1440px) {
+				padding : 1rem 0 8px;
+			}
+
+			font-size       : 18px;
+			color           : white;
+
+		}
+	}
+}
