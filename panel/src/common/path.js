@@ -1,4 +1,4 @@
-const baseUrl = 'http://195.248.240.3:9001/api';
+const baseUrl = 'http://156.253.5.110:9001/api';
 const version = '/v1';
 const backendUrl = `${baseUrl}${version}`;
 

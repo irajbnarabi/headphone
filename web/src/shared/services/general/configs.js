@@ -1,5 +1,5 @@
 export const serviceConfigs = {
-	base_url: 'http://195.248.240.3:9001/api',
+	base_url: 'http://156.253.5.110:9001/api',
 	version : '/v1/'
 };
 
