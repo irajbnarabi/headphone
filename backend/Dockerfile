@@ -7,5 +7,4 @@ RUN mkdir /static
 RUN mkdir /config
 COPY --from=build /home/app/rest/target/rest-1.0.0.jar /app.jar
 ADD ./rest/src/main/resources/application.yml /config/application.yml
-ADD ./rest/src/main/resources/application-init.yml /config/application.yml
 ENTRYPOINT ["java","-jar","/app.jar","--spring.config.location=/config/application.yml"]
